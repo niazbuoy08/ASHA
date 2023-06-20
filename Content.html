@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website - Content</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Animation Styles */
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    /* Styling for Content Page */
+    body.content {
+      background-color: #E6E6FA; /* Lilac color */
+    }
+    
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-top: 50px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+  
+    nav li {
+      display: inline;
+      margin-right: 10px;
+    }
+  
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    
+    h2 {
+      color: #333;
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    p {
+      color: #555;
+      text-align: center;
+      margin-bottom: 30px;
+      animation: fade-in 1s ease-in-out forwards;
+    }
+    
+    /* Product Grid Styles */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 50px;
+    }
+
+    .product-item {
+      text-align: center;
+    }
+
+    .product-item img {
+      width: 100%;
+      object-fit: contain; /* Adjusted property */
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-item h3 {
+      margin-top: 10px;
+      color: #333;
+    }
+  </style>
+</head>
+<body class="content">
+  <h1>Content</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="content.html">Content</a></li>
+    </ul>
+  </nav>
+  <h2 class="animated-text">Page Content</h2>
+  <p class="animated-text">
+    This is the content page of ASHA. Here, you will find your desired Sanitary pads for your daily needs to lead a safe and healthy life.
+  </p>
+  
+  <div class="product-grid">
+    <div class="product-item">
+      <img src="P1.png" alt="Product 1">
+      <h3>ASHA Sanitary napkin- wings extra flow</h3>
+    </div>
+    <div class="product-item">
+      <img src="P2.png" alt="Product 2">
+      <h3>Product 2</h3>
+    </div>
+    <div class="product-item">
+      <img src="P3.png" alt="Product 3">
+      <h3>ASHA Sanitary Napkin-Biodegradabale and safe</h3>
+    </div>

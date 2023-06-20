@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ASHA</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Animation Styles */
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    .animated-text {
+      opacity: 0;
+      animation: fade-in 1s ease-in-out forwards;
+      color: #fff; /* Set font color to white */
+    }
+    
+    .animated-image {
+      opacity: 0;
+      animation: fade-in 1s ease-in-out forwards;
+    }
+    
+    .hero-image {
+      background-image: url("cover page.png");
+      background-size: cover;
+      background-position: center center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .content-overlay {
+      text-align: center;
+    }
+
+    /* Navigation Styles */
+    .top-left-nav {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    .top-left-nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .top-left-nav li {
+      display: inline;
+      margin-right: 10px;
+    }
+  
+    .top-left-nav a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    /* Background Styles */
+    body.index {
+      background-color: #E6E6FA;
+    }
+
+    /* Button Styles */
+    .learn-more-button {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 20px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .learn-more-button:hover {
+      background-color: #555;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .hero-image {
+        height: auto;
+        min-height: 100vh;
+      }
+
+      .content-overlay {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body class="index">
+  <div class="hero-image animated-image">
+    <div class="top-left-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="content.html">Content</a></li>
+      </ul>
+    </div>
+    <div class="content-overlay">
+      <h1 class="animated-text">Welcome to ASHA</h1>
+      <p class="animated-text">Explore and Buy our amazing Products.</p>
+      <a href="about.html" class="learn-more-button animated-text">Learn More</a>
+    </div>
+  </div>
+  
+  <script>
+    // JavaScript to add animation class after page load
+    document.addEventListener('DOMContentLoaded', function() {
+      var animatedElements = document.querySelectorAll('.animated-text, .animated-image');
+      animatedElements.forEach(function(element) {
+        element.classList.add('animated');
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
